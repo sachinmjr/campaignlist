@@ -1,28 +1,29 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import React, { Component } from "react";
+import { Link, withRouter } from "react-router-dom";
+import "./App.css";
+import Routes from "./userAuth/Routes";
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            isAuthenticated: true,
+        };
+    }
+
+    render() {
+        const childProps = {
+            isAuthenticated: this.state.isAuthenticated,
+        };
+
+        return (!this.state.isAuthenticating &&
+            <div className="App container">
+                <div className="content-wrapper">
+                    <Routes childProps={childProps} />
+                </div>
+            </div>
+        );
+    }
 }
 
-export default App;
+export default withRouter(App);

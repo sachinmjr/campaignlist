@@ -1,0 +1,15 @@
+.edit-name-details {
+  min-width: 300px; }
+  .edit-name-details .name-textField {
+    width: 300px; }
+  .edit-name-details .action-wrapper {
+    margin-top: 20px; }
+    .edit-name-details .action-wrapper .cancel-button {
+      font-weight: 600;
+      cursor: pointer; }
+    .edit-name-details .action-wrapper .sumbit-button {
+      float: right;
+      background: #1a73e8;
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer; }

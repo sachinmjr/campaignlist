@@ -1,0 +1,35 @@
+.list-wrapper {
+    width: 100%;
+    table {
+      thead {
+        background: #ddd;
+        tr {
+          th {
+              font-size: 14px;
+              font-weight: 600;
+          }
+        }
+      }
+      tbody {
+        tr {
+          td {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .name {
+      color: #8480d1;
+    }
+
+    .edit-icon {
+      margin-right: 21px;
+      cursor: pointer;
+    }
+    .delete-icon {
+      color: #ff000096;
+      margin-right: 20px;
+      cursor: pointer;
+    }
+}

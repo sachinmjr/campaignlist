@@ -1,0 +1,20 @@
+.edit-name-details {
+    min-width: 300px;
+    .name-textField {
+      width: 300px;
+    }
+    .action-wrapper {
+      margin-top: 20px;
+      .cancel-button {
+        font-weight: 600;
+        cursor: pointer;
+      }
+      .sumbit-button {
+        float: right;
+        background: #1a73e8;
+        color: #fff;
+        font-weight: 600;
+        cursor: pointer;
+      }
+    }
+}

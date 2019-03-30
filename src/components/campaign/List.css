@@ -1,0 +1,18 @@
+.list-wrapper {
+  width: 100%; }
+  .list-wrapper table thead {
+    background: #ddd; }
+    .list-wrapper table thead tr th {
+      font-size: 14px;
+      font-weight: 600; }
+  .list-wrapper table tbody tr td {
+    font-size: 14px; }
+  .list-wrapper .name {
+    color: #8480d1; }
+  .list-wrapper .edit-icon {
+    margin-right: 21px;
+    cursor: pointer; }
+  .list-wrapper .delete-icon {
+    color: #ff000096;
+    margin-right: 20px;
+    cursor: pointer; }
